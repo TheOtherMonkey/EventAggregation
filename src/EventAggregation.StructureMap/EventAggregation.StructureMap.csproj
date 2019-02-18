@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>   
+    <DebugType>portable</DebugType>    
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>EventAggregation.StructureMap</RootNamespace>
+    <Description>StructureMap registrions for Common Event Aggregator library EventAggregation</Description>    
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <PackageTags>Event Agregation Common StructureMap</PackageTags>
+  </PropertyGroup>
+
+  <Import Project="..\SharedAssemblyInfo.proj" />
+  <Import Project="..\AssemblyVersionInfo.proj" />
+
+  <ItemGroup>
+    <PackageReference Include="StructureMap" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventAggregation\EventAggregation.csproj" />
+  </ItemGroup>
+  
+</Project>

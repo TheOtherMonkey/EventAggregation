@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>netstandard2.0</TargetFramework>    
+    <DebugType>portable</DebugType>    
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>    
+    <RootNamespace>EventAggregation</RootNamespace>
+    <Description>Common Event Aggregator library for ESS software</Description>        
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>    
+    <PackageTags>Event Agregation Common</PackageTags>
+  </PropertyGroup>
+
+  <Import Project="..\SharedAssemblyInfo.proj" />
+  <Import Project="..\AssemblyVersionInfo.proj" />
+    
+</Project>

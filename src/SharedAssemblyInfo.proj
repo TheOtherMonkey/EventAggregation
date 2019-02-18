@@ -1,0 +1,10 @@
+<Project>
+	<PropertyGroup>
+		<Authors>Graham Vann</Authors>
+		<Company>GV Software</Company>
+		<Copyright>Copyright © GV Software 2019</Copyright>
+		<Product>Event Aggregator</Product>
+		<RepositoryUrl></RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+</Project>
