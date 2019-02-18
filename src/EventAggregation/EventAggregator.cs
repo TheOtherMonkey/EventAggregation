@@ -79,7 +79,7 @@ namespace EventAggregation
         public void SendMessage<T>(T message)
         {
             LogMessage(message);
-            SendMessage(message, GenericListnerType(message));
+            SendMessage(message, GenericListenerType(message));
         }
 
         private void LogMessage<T>(T message)
@@ -91,8 +91,8 @@ namespace EventAggregation
         private void SendMessage<T>(T message, Type listenerType)
         {
             var subscriptions = GetSubscriptions(listenerType);
-            var zombieListeners = SendMessage(message, subscriptions);
-            RemoveZombieSubscriptions(zombieListeners, subscriptions);
+            var subscriptionsToRemove = SendMessage(message, subscriptions);
+            RemoveReleasedSubscriptions(subscriptionsToRemove, subscriptions);
         }
 
         /// <summary>
@@ -134,7 +134,7 @@ namespace EventAggregation
             syncContext.Send(s => listener.Handle(message), null);
         }        
 
-        private static Type GenericListnerType<T>(T message)
+        private static Type GenericListenerType<T>(T message)
         {
             return typeof(IListenFor<>).MakeGenericType(typeof(T));
         }
@@ -171,7 +171,7 @@ namespace EventAggregation
         /// </summary>
         /// <param name="subscriptionsToRemove">The list of listeners to be removed.</param>
         /// <param name="subscriptions">The list the listeners are to be removed from.</param>
-        private void RemoveZombieSubscriptions(IEnumerable<WeakReference> subscriptionsToRemove, ICollection<WeakReference> subscriptions)
+        private void RemoveReleasedSubscriptions(IEnumerable<WeakReference> subscriptionsToRemove, ICollection<WeakReference> subscriptions)
         {
             lock (_locker)
             {
