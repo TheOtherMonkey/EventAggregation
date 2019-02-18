@@ -8,8 +8,8 @@ using EventAggregation.Logging;
 namespace EventAggregation
 {
     /// <summary>
-    /// A centralised in-memory event aggregator for utilising weak references to avoid the need for making the class implement <see cref="IDisposable"/>.
-    /// In order for this component to be used successfully, there needs to be one and only one instance of the <see cref="EventAggregator"/> in existence
+    /// A centralised in-memory event aggregator utilising weak references to avoid the need for making the class implement <see cref="IDisposable"/>.
+    /// For this component to be used successfully, there needs to be one and only one instance of the <see cref="EventAggregator"/> in existence
     /// during the lifetime of the application where the <see cref="EventAggregator"/> is being used. The easiest way to enforce the singleton requirement
     /// for this class is to utilise a Dependency Injection (DI) framework and declare the lifetime of the
     /// <see cref="EventAggregator"/> as a singleton.
