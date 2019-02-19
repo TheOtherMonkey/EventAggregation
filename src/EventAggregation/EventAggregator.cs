@@ -79,7 +79,7 @@ namespace EventAggregation
         public void SendMessage<T>(T message)
         {
             LogMessage(message);
-            SendMessage(message, GenericListenerType(message));
+            SendMessage(message, GenericListenerType<T>());
         }
 
         private void LogMessage<T>(T message)
@@ -134,7 +134,7 @@ namespace EventAggregation
             syncContext.Send(s => listener.Handle(message), null);
         }        
 
-        private static Type GenericListenerType<T>(T message)
+        private static Type GenericListenerType<T>()
         {
             return typeof(IListenFor<>).MakeGenericType(typeof(T));
         }

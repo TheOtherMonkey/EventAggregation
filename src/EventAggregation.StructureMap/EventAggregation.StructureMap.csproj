@@ -5,7 +5,7 @@
     <DebugType>portable</DebugType>    
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>EventAggregation.StructureMap</RootNamespace>
-    <Description>StructureMap registrions for Common Event Aggregator library EventAggregation</Description>    
+    <Description>StructureMap registrions for Common Event Aggregator library</Description>    
   </PropertyGroup>
 
   <PropertyGroup>
