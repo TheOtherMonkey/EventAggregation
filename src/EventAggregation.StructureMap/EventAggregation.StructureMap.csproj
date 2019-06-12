@@ -5,19 +5,19 @@
     <DebugType>portable</DebugType>    
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>EventAggregation.StructureMap</RootNamespace>
-    <Description>StructureMap registrions for Common Event Aggregator library</Description>    
+    <Description>StructureMap registrations for Event Aggregator library</Description>    
   </PropertyGroup>
 
   <PropertyGroup>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <PackageTags>Event Agregation Common StructureMap</PackageTags>
+    <PackageTags>Event Agregation StructureMap</PackageTags>
   </PropertyGroup>
 
   <Import Project="..\SharedAssemblyInfo.proj" />
   <Import Project="..\AssemblyVersionInfo.proj" />
 
   <ItemGroup>
-    <PackageReference Include="StructureMap" Version="4.7.0" />
+    <PackageReference Include="StructureMap" Version="4.7.1" />
   </ItemGroup>
 
   <ItemGroup>

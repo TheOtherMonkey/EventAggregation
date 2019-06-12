@@ -13,9 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation", "src\Eve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.StructureMap", "src\EventAggregation.StructureMap\EventAggregation.StructureMap.csproj", "{4E887D94-9E15-4433-A86C-A3DCFB3B5D93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAggregation.Tests", "src\EventAggregation.Tests\EventAggregation.Tests.csproj", "{FB4C79D3-C8ED-49F4-9A7B-F88C6ABF4BD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.Tests", "src\EventAggregation.Tests\EventAggregation.Tests.csproj", "{FB4C79D3-C8ED-49F4-9A7B-F88C6ABF4BD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAggregation.StructureMap.Tests", "src\EventAggregation.StructureMap.Tests\EventAggregation.StructureMap.Tests.csproj", "{C456CA18-730A-4C0B-A261-FF00B973DF44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.StructureMap.Tests", "src\EventAggregation.StructureMap.Tests\EventAggregation.StructureMap.Tests.csproj", "{C456CA18-730A-4C0B-A261-FF00B973DF44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.Async", "src\EventAggregation.Async\EventAggregation.Async.csproj", "{D18C5B43-8BF1-4938-9A12-F9CDAAE871B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.Async.Tests", "src\EventAggregation.Async.Tests\EventAggregation.Async.Tests.csproj", "{C6D39DB2-E98F-456C-BC87-4AC8C9ACC0F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.Async.StructureMap", "src\EventAggregation.Async.StructureMap\EventAggregation.Async.StructureMap.csproj", "{29B136E5-D0B2-4421-8931-7087D656C07F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAggregation.Async.StructureMap.Tests", "src\EventAggregation.Async.StructureMap.Tests\EventAggregation.Async.StructureMap.Tests.csproj", "{A5C469B3-3090-4898-B170-201915905CD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,22 @@ Global
 		{C456CA18-730A-4C0B-A261-FF00B973DF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C456CA18-730A-4C0B-A261-FF00B973DF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C456CA18-730A-4C0B-A261-FF00B973DF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18C5B43-8BF1-4938-9A12-F9CDAAE871B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18C5B43-8BF1-4938-9A12-F9CDAAE871B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18C5B43-8BF1-4938-9A12-F9CDAAE871B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18C5B43-8BF1-4938-9A12-F9CDAAE871B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D39DB2-E98F-456C-BC87-4AC8C9ACC0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D39DB2-E98F-456C-BC87-4AC8C9ACC0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D39DB2-E98F-456C-BC87-4AC8C9ACC0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D39DB2-E98F-456C-BC87-4AC8C9ACC0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B136E5-D0B2-4421-8931-7087D656C07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B136E5-D0B2-4421-8931-7087D656C07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B136E5-D0B2-4421-8931-7087D656C07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B136E5-D0B2-4421-8931-7087D656C07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C469B3-3090-4898-B170-201915905CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C469B3-3090-4898-B170-201915905CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C469B3-3090-4898-B170-201915905CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C469B3-3090-4898-B170-201915905CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

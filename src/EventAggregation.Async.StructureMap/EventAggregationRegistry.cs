@@ -1,13 +1,12 @@
-﻿using EventAggregation.Logging;
-using StructureMap;
+﻿using StructureMap;
 using StructureMap.Building.Interception;
 using StructureMap.TypeRules;
 
-namespace EventAggregation.StructureMap
+namespace EventAggregation.Async.StructureMap
 {
     /// <inheritdoc />
     /// <summary>
-    /// StructureMap registry for the EventAggregation objects.
+    /// StructureMap registry for the EventAggregation.Async objects.
     /// </summary>    
     /// <remarks>
     /// 1. Registers <see cref="IEventAggregator" /> of type <see cref="EventAggregator" /> as a singleton.
@@ -24,7 +23,6 @@ namespace EventAggregation.StructureMap
         public EventAggregationRegistry()
         {
             ForSingletonOf<IEventAggregator>().Use<EventAggregator>();
-            ForSingletonOf<LoggedMessageBroker>().Use<LoggedMessageBroker>();
 
             var interceptor = new ActivatorInterceptor<object>((c, s) => RegisterWithEventAggregator(c, s));
             Policies.Interceptors(interceptor.ToPolicy());
