@@ -15,5 +15,8 @@
 
   <Import Project="..\SharedAssemblyInfo.proj" />
   <Import Project="..\AssemblyVersionInfo.proj" />
+  <ItemGroup>
+    <ProjectReference Include="..\EventAggregation.Api\EventAggregation.Api.csproj" />
+  </ItemGroup>
     
 </Project>

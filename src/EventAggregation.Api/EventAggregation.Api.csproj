@@ -2,16 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <DebugType>portable</DebugType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <RootNamespace>EventAggregation.Async</RootNamespace>
-    <Description>Asynchronous Event Aggregator Library</Description>
   </PropertyGroup>
 
   <Import Project="..\SharedAssemblyInfo.proj" />
   <Import Project="..\AssemblyVersionInfo.proj" />
-  <ItemGroup>
-    <ProjectReference Include="..\EventAggregation.Async.Api\EventAggregation.Async.Api.csproj" />
-  </ItemGroup>
-  
+
 </Project>
